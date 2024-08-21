@@ -1,30 +1,36 @@
 package reader
 
-import	"encoding/json"
-import	"fmt"
-import	"io"
-import	"os"
+import (
+	"encoding/json"
+	"fmt"
+	"io"
+	"os"
 
-import	"github.com/fixme_my_friend/hw02_fix_app/types"
-
+	"github.com/fixme_my_friend/hw02_fix_app/types"
+)
 
 func ReadJSON(filePath string, limit int) ([]types.Employee, error) {
 	f, err := os.Open(filePath)
 	if err != nil {
-		fmt.Printf("Error: %v", err)
+		return nil, fmt.Errorf("failed to open file: %v", err)
 	}
+	defer f.Close() // Закрыла файл после завершения функции
 
-	byte, err := io.ReadAll(f)
+	fileContent, err := io.ReadAll(f)
 	if err != nil {
-		fmt.Printf("Error: %v", err)
-		return nil, nil
+		return nil, fmt.Errorf("failed to read file: %v", err)
 	}
 
 	var data []types.Employee
 
-	err = json.Unmarshal(bytes, &data)
+	err = json.Unmarshal(fileContent, &data)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal JSON: %v", err)
+	}
 
-	res := data
+	if limit > 0 && limit < len(data) {
+		data = data[:limit] // Обрезала до нужного количества элементов
+	}
 
-	return res, nil
+	return data, nil
 }
