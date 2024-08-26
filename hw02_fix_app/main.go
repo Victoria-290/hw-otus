@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/fixme_my_friend/hw02_fix_app/printer"
-	"github.com/fixme_my_friend/hw02_fix_app/reader"
+	"github.com/Victoria-290/hw-otus/hw02_fix_app/printer"
+	"github.com/Victoria-290/hw-otus/hw02_fix_app/reader"
 )
 
 func main() {

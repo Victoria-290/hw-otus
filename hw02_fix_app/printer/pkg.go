@@ -3,7 +3,7 @@ package printer
 import (
 	"fmt" // Добавила импорт пакета fmt
 
-	"github.com/fixme_my_friend/hw02_fix_app/types"
+	"github.com/Victoria-290/hw-otus/hw02_fix_app/types"
 )
 
 func PrintStaff(staff []types.Employee) { // Изменила тип аргумента на срез
