@@ -13,27 +13,27 @@ type Book struct {
 }
 
 // Методы для получения полей.
-func (b Book) ID() int {
+func (b *Book) ID() int {
 	return b.id
 }
 
-func (b Book) Title() string {
+func (b *Book) Title() string {
 	return b.title
 }
 
-func (b Book) Author() string {
+func (b *Book) Author() string {
 	return b.author
 }
 
-func (b Book) Year() int {
+func (b *Book) Year() int {
 	return b.year
 }
 
-func (b Book) Size() int {
+func (b *Book) Size() int {
 	return b.size
 }
 
-func (b Book) Rate() float64 {
+func (b *Book) Rate() float64 {
 	return b.rate
 }
 
@@ -82,7 +82,7 @@ func NewBookComparator(field CompareField) *BookComparator {
 }
 
 // Метод для сравнения двух книг.
-func (bc BookComparator) Compare(book1, book2 Book) bool {
+func (bc *BookComparator) Compare(book1, book2 *Book) bool {
 	switch bc.field {
 	case ByYear:
 		return book1.Year() > book2.Year()
