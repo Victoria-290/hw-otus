@@ -96,7 +96,7 @@ func (bc *BookComparator) Compare(book1, book2 *Book) bool {
 }
 
 func main() {
-	book1 := Book{}
+	book1 := &Book{}
 	book1.SetID(1)
 	book1.SetTitle("Анна Каренина")
 	book1.SetAuthor("Лев Толстой")
@@ -104,7 +104,7 @@ func main() {
 	book1.SetSize(803)
 	book1.SetRate(4.6)
 
-	book2 := Book{}
+	book2 := &Book{}
 	book2.SetID(2)
 	book2.SetTitle("Мастер и Маргарита")
 	book2.SetAuthor("Михаил Булгаков")
