@@ -1,0 +1,13 @@
+mode: set
+github.com/Victoria-290/hw-otus/hw06_testing/main.go:11.13,30.16 11 0
+github.com/Victoria-290/hw-otus/hw06_testing/main.go:30.16,32.3 1 0
+github.com/Victoria-290/hw-otus/hw06_testing/pkg/shape/shape.go:16.32,18.2 1 1
+github.com/Victoria-290/hw-otus/hw06_testing/pkg/shape/shape.go:24.35,26.2 1 1
+github.com/Victoria-290/hw-otus/hw06_testing/pkg/shape/shape.go:32.34,34.2 1 1
+github.com/Victoria-290/hw-otus/hw06_testing/pkg/shape/shape.go:35.44,37.9 2 1
+github.com/Victoria-290/hw-otus/hw06_testing/pkg/shape/shape.go:37.9,39.3 1 1
+github.com/Victoria-290/hw-otus/hw06_testing/pkg/shape/shape.go:40.2,40.26 1 1
+github.com/Victoria-290/hw-otus/hw06_testing/pkg/book/book.go:12.80,14.2 1 1
+github.com/Victoria-290/hw-otus/hw06_testing/pkg/book/book.go:16.30,18.2 1 1
+github.com/Victoria-290/hw-otus/hw06_testing/pkg/book/book.go:20.30,22.2 1 1
+github.com/Victoria-290/hw-otus/hw06_testing/pkg/book/book.go:24.34,26.2 1 1

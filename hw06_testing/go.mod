@@ -1,3 +1,3 @@
-module github.com/fixme_my_friend/hw06_testing
+module github.com/Victoria-290/hw-otus/hw06_testing
 
 go 1.20
